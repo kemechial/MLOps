@@ -1,0 +1,11 @@
+2025-05-21 21:02:39,674 - INFO - This is an info message.
+2025-05-21 21:31:34,783 - INFO - Starting the division operation
+2025-05-21 21:31:34,783 - ERROR - Error occurred: division by zero
+2025-05-21 21:35:34,492 - INFO - Starting the division operation
+2025-05-21 21:35:34,492 - ERROR - Error occurred: division by zero
+2025-05-21 21:35:34,492 - ERROR - Error occurred in script: [C:\MLOps\Project1\testing.py] at line number: [10] with message: [An unexpected error occurred]
+2025-05-21 21:35:51,306 - INFO - Starting the division operation
+2025-05-21 21:35:51,306 - INFO - Division successful: 10 / 2 = 5.0
+2025-05-21 21:36:03,754 - INFO - Starting the division operation
+2025-05-21 21:36:03,754 - ERROR - Error occurred: division by zero
+2025-05-21 21:36:03,754 - ERROR - Error occurred in script: [C:\MLOps\Project1\testing.py] at line number: [10] with message: [An unexpected error occurred]
