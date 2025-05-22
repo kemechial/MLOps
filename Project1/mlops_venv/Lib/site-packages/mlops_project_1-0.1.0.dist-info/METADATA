@@ -4,5 +4,8 @@ Version: 0.1.0
 Author: kaan
 Requires-Dist: pandas
 Requires-Dist: numpy
+Requires-Dist: google-cloud-storage
+Requires-Dist: scikit-learn
+Requires-Dist: pyyaml
 Dynamic: author
 Dynamic: requires-dist

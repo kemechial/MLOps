@@ -1,0 +1,40 @@
+2025-05-22 08:23:44,451 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:24:09,114 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:25:07,657 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:25:07,657 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:25:10,819 - INFO - Data ingestion process finished
+2025-05-22 08:26:33,985 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:26:33,985 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:26:36,903 - INFO - Data ingestion process finished
+2025-05-22 08:26:50,455 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:26:50,455 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:26:53,504 - ERROR - Data ingestion failed: Error occurred in script: [C:\MLOps\Project1\src\data_ingestion.py] at line number: [29] with message: [Failed to download file from GCP bucket]
+2025-05-22 08:26:53,504 - INFO - Data ingestion process finished
+2025-05-22 08:28:14,793 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:28:14,793 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:28:17,778 - ERROR - Data ingestion failed: Error occurred in script: [C:\MLOps\Project1\src\data_ingestion.py] at line number: [29] with message: [Failed to download file from GCP bucket]
+2025-05-22 08:28:17,778 - INFO - Data ingestion process finished
+2025-05-22 08:29:38,284 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:29:38,284 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:29:41,317 - ERROR - Data ingestion failed: Error occurred in script: [C:\MLOps\Project1\src\data_ingestion.py] at line number: [29] with message: [Failed to download file from GCP bucket]
+2025-05-22 08:29:41,317 - INFO - Data ingestion process finished
+2025-05-22 08:29:57,520 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:29:57,520 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:30:00,680 - ERROR - Data ingestion failed: Error occurred in script: [C:\MLOps\Project1\src\data_ingestion.py] at line number: [29] with message: [Failed to download file from GCP bucket]
+2025-05-22 08:30:00,680 - INFO - Data ingestion process finished
+2025-05-22 08:34:16,650 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:34:16,650 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:34:17,653 - INFO - File Hotel_Reservations.csv downloaded from GCP bucket mlops_hotel_3474
+2025-05-22 08:34:17,653 - INFO - Splitting data into train and test sets
+2025-05-22 08:34:17,850 - INFO - Train data saved to artifacts/raw\train.csv
+2025-05-22 08:34:17,850 - INFO - Test data saved to artifacts/raw\test.csv
+2025-05-22 08:34:17,867 - INFO - Data ingestion completed successfully
+2025-05-22 08:34:17,867 - INFO - Data ingestion process finished
+2025-05-22 08:38:42,249 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-22 08:38:42,249 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-05-22 08:38:43,113 - INFO - File Hotel_Reservations.csv downloaded from GCP bucket mlops_hotel_3474
+2025-05-22 08:38:43,113 - INFO - Splitting data into train and test sets
+2025-05-22 08:38:43,398 - INFO - Train data saved to artifacts/raw\train.csv
+2025-05-22 08:38:43,398 - INFO - Test data saved to artifacts/raw\test.csv
+2025-05-22 08:38:43,398 - INFO - Data ingestion completed successfully
+2025-05-22 08:38:43,398 - INFO - Data ingestion process finished
