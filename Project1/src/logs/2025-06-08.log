@@ -1,0 +1,57 @@
+2025-06-08 12:22:18,140 - INFO - Starting model training pipeline
+2025-06-08 12:22:18,140 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-08 12:22:18,156 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-08 12:22:18,156 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-08 12:22:18,156 - INFO - Data loaded and split successfully.
+2025-06-08 12:22:18,156 - INFO - Starting LightGBM model training.
+2025-06-08 12:22:18,156 - INFO - Starting our Hyperparameter tuning
+2025-06-08 12:22:18,156 - INFO - Starting our model training
+2025-06-08 12:22:28,185 - INFO - Model training completed successfully.
+2025-06-08 12:22:28,185 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-08 12:22:28,185 - INFO - Evaluating model performance...
+2025-06-08 12:22:28,232 - INFO - Model evaluation completed. Accuracy: 0.8785969084423305, Precision: 0.8634703196347032, Recall: 0.8994054696789536, F1 Score: 0.8810716365754222
+2025-06-08 12:22:28,232 - INFO - Saving trained model...
+2025-06-08 12:22:28,232 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-08 12:22:28,296 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-08 12:22:28,296 - INFO - Model training pipeline completed successfully.
+2025-06-08 12:22:28,296 - INFO - Model training process finished.
+2025-06-08 14:46:18,162 - INFO - Starting model training pipeline
+2025-06-08 14:46:18,162 - INFO - Starting our MLFLOW experiment
+2025-06-08 14:46:18,162 - INFO - Logging the training and testing dataset to MLFLOW
+2025-06-08 14:46:18,178 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-08 14:46:18,197 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-08 14:46:18,197 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-08 14:46:18,197 - INFO - Data loaded and split successfully.
+2025-06-08 14:46:18,197 - INFO - Starting LightGBM model training.
+2025-06-08 14:46:18,197 - INFO - Starting our Hyperparameter tuning
+2025-06-08 14:46:18,197 - INFO - Starting our model training
+2025-06-08 14:46:28,494 - INFO - Model training completed successfully.
+2025-06-08 14:46:28,495 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-08 14:46:28,495 - INFO - Evaluating model performance...
+2025-06-08 14:46:28,536 - INFO - Model evaluation completed. Accuracy: 0.8785969084423305, Precision: 0.8634703196347032, Recall: 0.8994054696789536, F1 Score: 0.8810716365754222
+2025-06-08 14:46:28,536 - INFO - Saving trained model...
+2025-06-08 14:46:28,536 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-08 14:46:28,603 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-08 14:46:28,604 - INFO - Logging the model into MLFLOW
+2025-06-08 14:46:28,658 - INFO - Model training pipeline completed successfully.
+2025-06-08 14:46:28,658 - INFO - Model training process finished.
+2025-06-08 15:28:49,128 - INFO - Starting model training pipeline
+2025-06-08 15:28:49,128 - INFO - Starting our MLFLOW experiment
+2025-06-08 15:28:49,128 - INFO - Logging the training and testing dataset to MLFLOW
+2025-06-08 15:28:49,128 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-08 15:28:49,153 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-08 15:28:49,153 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-08 15:28:49,153 - INFO - Data loaded and split successfully.
+2025-06-08 15:28:49,153 - INFO - Starting LightGBM model training.
+2025-06-08 15:28:49,153 - INFO - Starting our Hyperparameter tuning
+2025-06-08 15:28:49,153 - INFO - Starting our model training
+2025-06-08 15:29:00,804 - INFO - Model training completed successfully.
+2025-06-08 15:29:00,804 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-08 15:29:00,804 - INFO - Evaluating model performance...
+2025-06-08 15:29:00,868 - INFO - Model evaluation completed. Accuracy: 0.8785969084423305, Precision: 0.8634703196347032, Recall: 0.8994054696789536, F1 Score: 0.8810716365754222
+2025-06-08 15:29:00,869 - INFO - Saving trained model...
+2025-06-08 15:29:00,869 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-08 15:29:00,950 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-08 15:29:00,950 - INFO - Logging the model into MLFLOW
+2025-06-08 15:29:00,976 - INFO - Model training pipeline completed successfully.
+2025-06-08 15:29:00,979 - INFO - Model training process finished.

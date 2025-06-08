@@ -1,0 +1,34 @@
+2025-06-02 21:02:52,418 - INFO - Starting model training pipeline
+2025-06-02 21:02:52,418 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-02 21:02:52,437 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-02 21:02:52,444 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-02 21:02:52,448 - INFO - Data loaded and split successfully.
+2025-06-02 21:02:52,448 - INFO - Starting LightGBM model training.
+2025-06-02 21:02:52,448 - INFO - Starting our Hyperparameter tuning
+2025-06-02 21:02:52,448 - INFO - Starting our model training
+2025-06-02 21:03:02,684 - INFO - Model training completed successfully.
+2025-06-02 21:03:02,684 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-02 21:03:02,684 - INFO - Evaluating model performance...
+2025-06-02 21:03:02,715 - INFO - Model evaluation completed. Accuracy: 0.6945592855961634, Precision: 0.6951986754966888, Recall: 0.9985731272294887, F1 Score: 0.819716935090288
+2025-06-02 21:03:02,715 - INFO - Saving trained model...
+2025-06-02 21:03:02,720 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-02 21:03:02,757 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-02 21:03:02,757 - INFO - Model training pipeline completed successfully.
+2025-06-02 21:03:02,757 - INFO - Model training process finished.
+2025-06-02 21:04:41,292 - INFO - Starting model training pipeline
+2025-06-02 21:04:41,293 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-02 21:04:41,322 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-02 21:04:41,331 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-02 21:04:41,334 - INFO - Data loaded and split successfully.
+2025-06-02 21:04:41,335 - INFO - Starting LightGBM model training.
+2025-06-02 21:04:41,335 - INFO - Starting our Hyperparameter tuning
+2025-06-02 21:04:41,335 - INFO - Starting our model training
+2025-06-02 21:04:51,608 - INFO - Model training completed successfully.
+2025-06-02 21:04:51,608 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-02 21:04:51,608 - INFO - Evaluating model performance...
+2025-06-02 21:04:51,636 - INFO - Model evaluation completed. Accuracy: 0.6945592855961634, Precision: 0.6951986754966888, Recall: 0.9985731272294887, F1 Score: 0.819716935090288
+2025-06-02 21:04:51,636 - INFO - Saving trained model...
+2025-06-02 21:04:51,636 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-02 21:04:51,699 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-02 21:04:51,699 - INFO - Model training pipeline completed successfully.
+2025-06-02 21:04:51,699 - INFO - Model training process finished.

@@ -2,7 +2,8 @@ import logging
 import os
 from datetime import datetime
 
-LOGS_DIR = os.path.join(os.path.dirname(__file__), 'logs')
+#LOGS_DIR = os.path.join(os.path.dirname(__file__), 'logs')
+LOGS_DIR = "logs"
 os.makedirs(LOGS_DIR, exist_ok=True)
 
 LOG_FILE = os.path.join(LOGS_DIR, f"{datetime.now().strftime('%Y-%m-%d')}.log")

@@ -1,0 +1,253 @@
+2025-06-01 10:15:23,940 - INFO - Created directory: artifacts/processed
+2025-06-01 10:15:23,940 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:15:23,941 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:15:23,983 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:15:23,994 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:15:23,995 - INFO - Preprocessing training data
+2025-06-01 10:15:23,995 - INFO - Preprocessing data...
+2025-06-01 10:15:23,995 - INFO - Dropping the columns
+2025-06-01 10:15:24,012 - ERROR - Error during data preprocessing: 'categorical_columns'
+2025-06-01 10:15:24,013 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [32] with message: ['categorical_columns']
+2025-06-01 10:15:24,013 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:25:48,459 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:25:48,460 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:25:48,499 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:25:48,509 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:25:48,509 - INFO - Preprocessing training data
+2025-06-01 10:25:48,509 - INFO - Preprocessing data...
+2025-06-01 10:25:48,509 - INFO - Dropping the columns
+2025-06-01 10:25:48,522 - INFO - Encoding categorical columns
+2025-06-01 10:25:48,589 - INFO - Label encoding completed
+2025-06-01 10:25:48,590 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:25:48,590 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:25:48,590 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:25:48,590 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:25:48,590 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:25:48,590 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:25:48,590 - INFO - Doing Skewness handling
+2025-06-01 10:25:48,592 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:25:48,593 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:25:48,593 - INFO - Balancing data using SMOTE...
+2025-06-01 10:25:48,593 - ERROR - Error during data balancing: "['Booking_Status'] not found in axis"
+2025-06-01 10:25:48,593 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [67] with message: ["['Booking_Status'] not found in axis"]
+2025-06-01 10:25:48,593 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:26:02,919 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:26:02,921 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:26:02,960 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:26:02,970 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:26:02,970 - INFO - Preprocessing training data
+2025-06-01 10:26:02,970 - INFO - Preprocessing data...
+2025-06-01 10:26:02,970 - INFO - Dropping the columns
+2025-06-01 10:26:02,984 - INFO - Encoding categorical columns
+2025-06-01 10:26:02,994 - INFO - Label encoding completed
+2025-06-01 10:26:02,994 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:26:02,994 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:26:02,994 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:26:02,994 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:26:02,994 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:26:02,994 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:26:02,994 - INFO - Doing Skewness handling
+2025-06-01 10:26:02,997 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:26:02,997 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:26:02,997 - INFO - Balancing data using SMOTE...
+2025-06-01 10:26:02,997 - ERROR - Error during data balancing: "['Booking_Status'] not found in axis"
+2025-06-01 10:26:02,997 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [67] with message: ["['Booking_Status'] not found in axis"]
+2025-06-01 10:26:02,997 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:29:19,168 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:29:19,169 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:29:19,209 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:29:19,220 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:29:19,220 - INFO - Preprocessing training data
+2025-06-01 10:29:19,220 - INFO - Preprocessing data...
+2025-06-01 10:29:19,220 - INFO - Dropping the columns
+2025-06-01 10:29:19,234 - INFO - Encoding categorical columns
+2025-06-01 10:29:19,243 - INFO - Label encoding completed
+2025-06-01 10:29:19,243 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:29:19,243 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:29:19,243 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:29:19,243 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:29:19,243 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:29:19,243 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:29:19,243 - INFO - Doing Skewness handling
+2025-06-01 10:29:19,246 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:29:19,246 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:29:19,246 - INFO - Balancing data using SMOTE...
+2025-06-01 10:29:19,247 - ERROR - Error during data balancing: 'Booking_Status'
+2025-06-01 10:29:19,247 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [68] with message: ['Booking_Status']
+2025-06-01 10:29:19,247 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:30:01,617 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:30:01,620 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:30:01,658 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:30:01,669 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:30:01,669 - INFO - Preprocessing training data
+2025-06-01 10:30:01,670 - INFO - Preprocessing data...
+2025-06-01 10:30:01,670 - INFO - Dropping the columns
+2025-06-01 10:30:01,683 - INFO - Encoding categorical columns
+2025-06-01 10:30:01,692 - INFO - Label encoding completed
+2025-06-01 10:30:01,693 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:30:01,693 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:30:01,693 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:30:01,693 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:30:01,693 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:30:01,693 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:30:01,693 - INFO - Doing Skewness handling
+2025-06-01 10:30:01,697 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:30:01,697 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:30:01,698 - INFO - Balancing data using SMOTE...
+2025-06-01 10:30:03,605 - INFO - Data balancing completed
+2025-06-01 10:30:03,606 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:30:05,721 - ERROR - Error during feature selection: 'num_top_features'
+2025-06-01 10:30:05,721 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [100] with message: ['num_top_features']
+2025-06-01 10:30:05,721 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:30:23,620 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:30:23,621 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:30:23,660 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:30:23,670 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:30:23,670 - INFO - Preprocessing training data
+2025-06-01 10:30:23,670 - INFO - Preprocessing data...
+2025-06-01 10:30:23,670 - INFO - Dropping the columns
+2025-06-01 10:30:23,685 - INFO - Encoding categorical columns
+2025-06-01 10:30:23,694 - INFO - Label encoding completed
+2025-06-01 10:30:23,694 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:30:23,694 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:30:23,694 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:30:23,694 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:30:23,694 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:30:23,694 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:30:23,694 - INFO - Doing Skewness handling
+2025-06-01 10:30:23,697 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:30:23,697 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:30:23,697 - INFO - Balancing data using SMOTE...
+2025-06-01 10:30:25,203 - INFO - Data balancing completed
+2025-06-01 10:30:25,203 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:30:25,204 - ERROR - Error during feature selection: "['Booking_Status'] not found in axis"
+2025-06-01 10:30:25,204 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [86] with message: ["['Booking_Status'] not found in axis"]
+2025-06-01 10:30:25,204 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:31:08,853 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:31:08,853 - INFO - Data Ingestion started mlops_hotel_3474 and Hotel_Reservations.csv
+2025-06-01 10:31:09,426 - ERROR - Data ingestion failed: Error occurred in script: [C:\MLOps\Project1\src\data_ingestion.py] at line number: [32] with message: [Failed to download file from GCP bucket]
+2025-06-01 10:31:09,426 - INFO - Data ingestion process finished
+2025-06-01 10:31:33,762 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:31:33,763 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:31:33,801 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:31:33,813 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:31:33,813 - INFO - Preprocessing training data
+2025-06-01 10:31:33,813 - INFO - Preprocessing data...
+2025-06-01 10:31:33,813 - INFO - Dropping the columns
+2025-06-01 10:31:33,826 - INFO - Encoding categorical columns
+2025-06-01 10:31:33,835 - INFO - Label encoding completed
+2025-06-01 10:31:33,836 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:31:33,836 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:31:33,836 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:31:33,836 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:31:33,836 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:31:33,836 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:31:33,836 - INFO - Doing Skewness handling
+2025-06-01 10:31:33,838 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:31:33,839 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:31:33,839 - INFO - Balancing data using SMOTE...
+2025-06-01 10:31:35,315 - INFO - Data balancing completed
+2025-06-01 10:31:35,316 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:31:37,395 - ERROR - Error during feature selection: 'num_top_features'
+2025-06-01 10:31:37,395 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [100] with message: ['num_top_features']
+2025-06-01 10:31:37,395 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:32:18,150 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:32:18,151 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:32:18,191 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:32:18,203 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:32:18,204 - INFO - Preprocessing training data
+2025-06-01 10:32:18,204 - INFO - Preprocessing data...
+2025-06-01 10:32:18,204 - INFO - Dropping the columns
+2025-06-01 10:32:18,218 - INFO - Encoding categorical columns
+2025-06-01 10:32:18,227 - INFO - Label encoding completed
+2025-06-01 10:32:18,227 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:32:18,227 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:32:18,227 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:32:18,227 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:32:18,227 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:32:18,227 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:32:18,227 - INFO - Doing Skewness handling
+2025-06-01 10:32:18,230 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:32:18,230 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:32:18,230 - INFO - Balancing data using SMOTE...
+2025-06-01 10:32:19,707 - INFO - Data balancing completed
+2025-06-01 10:32:19,707 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:32:21,798 - ERROR - Error during feature selection: 'feature'
+2025-06-01 10:32:21,798 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [102] with message: ['feature']
+2025-06-01 10:32:21,798 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:33:14,370 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:33:14,371 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:33:14,410 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:33:14,421 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:33:14,421 - INFO - Preprocessing training data
+2025-06-01 10:33:14,421 - INFO - Preprocessing data...
+2025-06-01 10:33:14,421 - INFO - Dropping the columns
+2025-06-01 10:33:14,434 - INFO - Encoding categorical columns
+2025-06-01 10:33:14,444 - INFO - Label encoding completed
+2025-06-01 10:33:14,444 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:33:14,444 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:33:14,444 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:33:14,444 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:33:14,444 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:33:14,445 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:33:14,445 - INFO - Doing Skewness handling
+2025-06-01 10:33:14,447 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:33:14,447 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:33:14,447 - INFO - Balancing data using SMOTE...
+2025-06-01 10:33:15,904 - INFO - Data balancing completed
+2025-06-01 10:33:15,905 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:33:17,969 - INFO - Selected top 10 features: ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-06-01 10:33:17,971 - ERROR - Error during feature selection: "['Booking_Status'] not in index"
+2025-06-01 10:33:17,971 - ERROR - Error in data preprocessing pipeline: Error occurred in script: [C:\MLOps\Project1\src\data_preprocessing.py] at line number: [106] with message: ["['Booking_Status'] not in index"]
+2025-06-01 10:33:17,971 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:33:46,608 - INFO - Starting data preprocessing pipeline...
+2025-06-01 10:33:46,609 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-01 10:33:46,649 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-01 10:33:46,659 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-01 10:33:46,659 - INFO - Preprocessing training data
+2025-06-01 10:33:46,659 - INFO - Preprocessing data...
+2025-06-01 10:33:46,659 - INFO - Dropping the columns
+2025-06-01 10:33:46,673 - INFO - Encoding categorical columns
+2025-06-01 10:33:46,682 - INFO - Label encoding completed
+2025-06-01 10:33:46,682 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:33:46,682 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:33:46,683 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:33:46,683 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:33:46,683 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:33:46,683 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:33:46,683 - INFO - Doing Skewness handling
+2025-06-01 10:33:46,685 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:33:46,685 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:33:46,685 - INFO - Balancing data using SMOTE...
+2025-06-01 10:33:48,148 - INFO - Data balancing completed
+2025-06-01 10:33:48,149 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:33:50,243 - INFO - Selected top 10 features: ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-06-01 10:33:50,244 - INFO - Feature selection completed
+2025-06-01 10:33:50,350 - INFO - Processed data saved to artifacts/processed\train_processed.csv
+2025-06-01 10:33:50,350 - INFO - Preprocessing test data
+2025-06-01 10:33:50,350 - INFO - Preprocessing data...
+2025-06-01 10:33:50,350 - INFO - Dropping the columns
+2025-06-01 10:33:50,354 - INFO - Encoding categorical columns
+2025-06-01 10:33:50,358 - INFO - Label encoding completed
+2025-06-01 10:33:50,358 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-01 10:33:50,358 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:33:50,358 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-01 10:33:50,358 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-01 10:33:50,358 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-01 10:33:50,358 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-01 10:33:50,358 - INFO - Doing Skewness handling
+2025-06-01 10:33:50,360 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-01 10:33:50,360 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-01 10:33:50,360 - INFO - Selecting features using Random Forest Classifier...
+2025-06-01 10:33:50,785 - INFO - Selected top 10 features: ['lead_time' 'avg_price_per_room' 'no_of_special_requests' 'arrival_date'
+ 'arrival_month' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'no_of_adults' 'arrival_year']
+2025-06-01 10:33:50,785 - INFO - Feature selection completed
+2025-06-01 10:33:50,797 - INFO - Processed data saved to artifacts/processed\test_processed.csv
+2025-06-01 10:33:50,797 - INFO - Data preprocessing pipeline completed successfully
+2025-06-01 10:33:50,797 - INFO - Data preprocessing pipeline finished
+2025-06-01 10:35:10,046 - INFO - This is an info message.

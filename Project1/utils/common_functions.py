@@ -1,5 +1,5 @@
 import os
-import pandas
+import pandas as pd
 from src.logger import get_logger
 from src.custom_exception import CustomException
 import yaml
@@ -18,3 +18,17 @@ def read_yaml(file_path: str) -> dict:
     except Exception as e:
         logger.error(f"Error reading YAML file {file_path}: {e}")
         raise CustomException("Error reading YAML file", e)
+    
+    
+def load_data(file_path: str) -> pd.DataFrame:
+    try:
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"File {file_path} not found.")
+        df = pd.read_csv(file_path)
+        logger.info(f"Data loaded from {file_path} successfully.")
+        return df
+    except Exception as e:
+        logger.error(f"Error loading data from {file_path}: {e}")
+        raise CustomException("Error loading data", e)
+    
+    

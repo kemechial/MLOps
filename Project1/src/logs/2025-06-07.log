@@ -1,0 +1,259 @@
+2025-06-07 09:01:11,456 - INFO - Starting model training pipeline
+2025-06-07 09:01:11,456 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-07 09:01:11,457 - ERROR - Error loading data from artifacts/processed\train_processed.csv: File artifacts/processed\train_processed.csv not found.
+2025-06-07 09:01:11,457 - ERROR - Error loading or splitting data: 'FileNotFoundError' object has no attribute 'exc_info'
+2025-06-07 09:01:11,457 - ERROR - Error in model training pipeline: Error occurred in script: [C:\MLOps\Project1\src\model_training.py] at line number: [29] with message: ['FileNotFoundError' object has no attribute 'exc_info']
+2025-06-07 09:01:11,457 - INFO - Model training process finished.
+2025-06-07 09:11:08,654 - INFO - Starting model training pipeline
+2025-06-07 09:11:08,654 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-07 09:11:08,677 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-07 09:11:08,685 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-07 09:11:08,687 - INFO - Data loaded and split successfully.
+2025-06-07 09:11:08,687 - INFO - Starting LightGBM model training.
+2025-06-07 09:11:08,687 - INFO - Starting our Hyperparameter tuning
+2025-06-07 09:11:08,687 - INFO - Starting our model training
+2025-06-07 09:11:25,895 - INFO - Model training completed successfully.
+2025-06-07 09:11:25,895 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-07 09:11:25,895 - INFO - Evaluating model performance...
+2025-06-07 09:11:25,915 - INFO - Model evaluation completed. Accuracy: 0.6945592855961634, Precision: 0.6951986754966888, Recall: 0.9985731272294887, F1 Score: 0.819716935090288
+2025-06-07 09:11:25,915 - INFO - Saving trained model...
+2025-06-07 09:11:25,915 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-07 09:11:25,977 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-07 09:11:25,977 - INFO - Model training pipeline completed successfully.
+2025-06-07 09:11:25,977 - INFO - Model training process finished.
+2025-06-07 12:52:34,295 - INFO - Starting data preprocessing pipeline...
+2025-06-07 12:52:34,295 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-07 12:52:34,384 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-07 12:52:34,395 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-07 12:52:34,395 - INFO - Preprocessing training data
+2025-06-07 12:52:34,395 - INFO - Preprocessing data...
+2025-06-07 12:52:34,395 - INFO - Dropping the columns
+2025-06-07 12:52:34,400 - INFO - Encoding categorical columns
+2025-06-07 12:52:34,416 - INFO - Label encoding completed
+2025-06-07 12:52:34,416 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 12:52:34,416 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 12:52:34,416 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 12:52:34,416 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 12:52:34,416 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 12:52:34,416 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 12:52:34,416 - INFO - Doing Skewness handling
+2025-06-07 12:52:34,416 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 12:52:34,416 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 12:52:34,416 - INFO - Balancing data using SMOTE...
+2025-06-07 12:52:36,000 - INFO - Data balancing completed
+2025-06-07 12:52:36,000 - INFO - Selecting features using Random Forest Classifier...
+2025-06-07 12:52:38,058 - INFO - Selected top 10 features: ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-06-07 12:52:38,061 - INFO - Feature selection completed
+2025-06-07 12:52:38,165 - INFO - Processed data saved to artifacts/processed\train_processed.csv
+2025-06-07 12:52:38,165 - INFO - Preprocessing test data
+2025-06-07 12:52:38,165 - INFO - Preprocessing data...
+2025-06-07 12:52:38,165 - INFO - Dropping the columns
+2025-06-07 12:52:38,165 - INFO - Encoding categorical columns
+2025-06-07 12:52:38,165 - INFO - Label encoding completed
+2025-06-07 12:52:38,165 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 12:52:38,165 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 12:52:38,165 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 12:52:38,165 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 12:52:38,165 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 12:52:38,165 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 12:52:38,165 - INFO - Doing Skewness handling
+2025-06-07 12:52:38,165 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 12:52:38,165 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 12:52:38,165 - INFO - Selecting features using Random Forest Classifier...
+2025-06-07 12:52:38,605 - INFO - Selected top 10 features: ['lead_time' 'avg_price_per_room' 'no_of_special_requests' 'arrival_date'
+ 'arrival_month' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'no_of_adults' 'arrival_year']
+2025-06-07 12:52:38,605 - INFO - Feature selection completed
+2025-06-07 12:52:38,616 - INFO - Processed data saved to artifacts/processed\test_processed.csv
+2025-06-07 12:52:38,616 - INFO - Data preprocessing pipeline completed successfully
+2025-06-07 12:52:38,616 - INFO - Data preprocessing pipeline finished
+2025-06-07 12:54:18,418 - INFO - Starting model training pipeline
+2025-06-07 12:54:18,418 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-07 12:54:18,433 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-07 12:54:18,450 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-07 12:54:18,450 - INFO - Data loaded and split successfully.
+2025-06-07 12:54:18,450 - INFO - Starting LightGBM model training.
+2025-06-07 12:54:18,450 - INFO - Starting our Hyperparameter tuning
+2025-06-07 12:54:18,450 - INFO - Starting our model training
+2025-06-07 12:54:35,154 - INFO - Model training completed successfully.
+2025-06-07 12:54:35,154 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-07 12:54:35,154 - INFO - Evaluating model performance...
+2025-06-07 12:54:35,185 - INFO - Model evaluation completed. Accuracy: 0.6945592855961634, Precision: 0.6951986754966888, Recall: 0.9985731272294887, F1 Score: 0.819716935090288
+2025-06-07 12:54:35,185 - INFO - Saving trained model...
+2025-06-07 12:54:35,185 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-07 12:54:35,235 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-07 12:54:35,235 - INFO - Model training pipeline completed successfully.
+2025-06-07 12:54:35,235 - INFO - Model training process finished.
+2025-06-07 20:08:56,234 - INFO - Starting data preprocessing pipeline...
+2025-06-07 20:08:56,234 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-07 20:08:56,281 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-07 20:08:56,287 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-07 20:08:56,287 - INFO - Preprocessing training data
+2025-06-07 20:08:56,287 - INFO - Preprocessing data...
+2025-06-07 20:08:56,287 - INFO - Dropping the columns
+2025-06-07 20:08:56,303 - INFO - Encoding categorical columns
+2025-06-07 20:08:56,319 - INFO - Label encoding completed
+2025-06-07 20:08:56,319 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 20:08:56,319 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:08:56,319 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 20:08:56,319 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 20:08:56,319 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:08:56,319 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 20:08:56,319 - INFO - Doing Skewness handling
+2025-06-07 20:08:56,319 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 20:08:56,319 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 20:08:56,319 - INFO - Balancing data using SMOTE...
+2025-06-07 20:08:57,905 - INFO - Data balancing completed
+2025-06-07 20:08:57,905 - INFO - Selecting features using Random Forest Classifier...
+2025-06-07 20:08:59,963 - INFO - Selected top 10 features: ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-06-07 20:08:59,963 - INFO - Feature selection completed
+2025-06-07 20:09:00,025 - INFO - Processed data saved to artifacts/processed\train_processed.csv
+2025-06-07 20:09:00,025 - INFO - Preprocessing test data
+2025-06-07 20:09:00,025 - INFO - Preprocessing data...
+2025-06-07 20:09:00,025 - INFO - Dropping the columns
+2025-06-07 20:09:00,025 - INFO - Encoding categorical columns
+2025-06-07 20:09:00,035 - INFO - Label encoding completed
+2025-06-07 20:09:00,035 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 20:09:00,035 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:09:00,035 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 20:09:00,035 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 20:09:00,035 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:09:00,035 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 20:09:00,035 - INFO - Doing Skewness handling
+2025-06-07 20:09:00,035 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 20:09:00,035 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 20:09:00,035 - INFO - Selecting features using Random Forest Classifier...
+2025-06-07 20:09:00,461 - INFO - Selected top 10 features: ['lead_time' 'avg_price_per_room' 'no_of_special_requests' 'arrival_date'
+ 'arrival_month' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'no_of_adults' 'arrival_year']
+2025-06-07 20:09:00,461 - INFO - Feature selection completed
+2025-06-07 20:09:00,472 - INFO - Processed data saved to artifacts/processed\test_processed.csv
+2025-06-07 20:09:00,472 - INFO - Data preprocessing pipeline completed successfully
+2025-06-07 20:09:00,472 - INFO - Data preprocessing pipeline finished
+2025-06-07 20:09:08,815 - INFO - Starting model training pipeline
+2025-06-07 20:09:08,815 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-07 20:09:08,831 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-07 20:09:08,847 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-07 20:09:08,847 - INFO - Data loaded and split successfully.
+2025-06-07 20:09:08,847 - INFO - Starting LightGBM model training.
+2025-06-07 20:09:08,847 - INFO - Starting our Hyperparameter tuning
+2025-06-07 20:09:08,847 - INFO - Starting our model training
+2025-06-07 20:09:25,878 - INFO - Model training completed successfully.
+2025-06-07 20:09:25,878 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-07 20:09:25,878 - INFO - Evaluating model performance...
+2025-06-07 20:09:25,908 - INFO - Model evaluation completed. Accuracy: 0.6945592855961634, Precision: 0.6951986754966888, Recall: 0.9985731272294887, F1 Score: 0.819716935090288
+2025-06-07 20:09:25,908 - INFO - Saving trained model...
+2025-06-07 20:09:25,908 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-07 20:09:25,969 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-07 20:09:25,969 - INFO - Model training pipeline completed successfully.
+2025-06-07 20:09:25,969 - INFO - Model training process finished.
+2025-06-07 20:30:27,569 - INFO - Starting data preprocessing pipeline...
+2025-06-07 20:30:27,569 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-07 20:30:27,619 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-07 20:30:27,634 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-07 20:30:27,634 - INFO - Preprocessing training data
+2025-06-07 20:30:27,634 - INFO - Preprocessing data...
+2025-06-07 20:30:27,634 - INFO - Dropping the columns
+2025-06-07 20:30:27,647 - INFO - Encoding categorical columns
+2025-06-07 20:30:27,663 - INFO - Label encoding completed
+2025-06-07 20:30:27,663 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 20:30:27,663 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:30:27,663 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 20:30:27,663 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 20:30:27,663 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:30:27,663 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 20:30:27,663 - INFO - Doing Skewness handling
+2025-06-07 20:30:27,666 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 20:30:27,666 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 20:30:27,666 - INFO - Balancing data using SMOTE...
+2025-06-07 20:30:29,200 - INFO - Data balancing completed
+2025-06-07 20:30:29,200 - INFO - Selecting features using Random Forest Classifier...
+2025-06-07 20:30:31,235 - INFO - Selected top 10 features: ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-06-07 20:30:31,235 - INFO - Feature selection completed
+2025-06-07 20:30:31,291 - INFO - Processed data saved to artifacts/processed\train_processed.csv
+2025-06-07 20:30:31,291 - INFO - Preprocessing test data
+2025-06-07 20:30:31,291 - INFO - Preprocessing data...
+2025-06-07 20:30:31,291 - INFO - Dropping the columns
+2025-06-07 20:30:31,291 - INFO - Encoding categorical columns
+2025-06-07 20:30:31,291 - INFO - Label encoding completed
+2025-06-07 20:30:31,291 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 20:30:31,291 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:30:31,291 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 20:30:31,291 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 20:30:31,291 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:30:31,291 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 20:30:31,291 - INFO - Doing Skewness handling
+2025-06-07 20:30:31,291 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 20:30:31,291 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 20:30:31,291 - INFO - Balancing data using SMOTE...
+2025-06-07 20:30:31,307 - INFO - Data balancing completed
+2025-06-07 20:30:31,307 - ERROR - Error in data preprocessing pipeline: 'DataPreprocessor' object has no attribute 'test_df'
+2025-06-07 20:30:31,307 - INFO - Data preprocessing pipeline finished
+2025-06-07 20:31:22,504 - INFO - Starting data preprocessing pipeline...
+2025-06-07 20:31:22,504 - INFO - YAML file config/config.yaml loaded successfully.
+2025-06-07 20:31:22,552 - INFO - Data loaded from artifacts/raw\train.csv successfully.
+2025-06-07 20:31:22,552 - INFO - Data loaded from artifacts/raw\test.csv successfully.
+2025-06-07 20:31:22,552 - INFO - Preprocessing training data
+2025-06-07 20:31:22,552 - INFO - Preprocessing data...
+2025-06-07 20:31:22,552 - INFO - Dropping the columns
+2025-06-07 20:31:22,573 - INFO - Encoding categorical columns
+2025-06-07 20:31:22,590 - INFO - Label encoding completed
+2025-06-07 20:31:22,590 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 20:31:22,590 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:31:22,590 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 20:31:22,590 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 20:31:22,590 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:31:22,590 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 20:31:22,590 - INFO - Doing Skewness handling
+2025-06-07 20:31:22,590 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 20:31:22,590 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 20:31:22,590 - INFO - Balancing data using SMOTE...
+2025-06-07 20:31:24,074 - INFO - Data balancing completed
+2025-06-07 20:31:24,074 - INFO - Selecting features using Random Forest Classifier...
+2025-06-07 20:31:26,145 - INFO - Selected top 10 features: ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'room_type_reserved' 'type_of_meal_plan']
+2025-06-07 20:31:26,145 - INFO - Feature selection completed
+2025-06-07 20:31:26,206 - INFO - Processed data saved to artifacts/processed\train_processed.csv
+2025-06-07 20:31:26,206 - INFO - Preprocessing test data
+2025-06-07 20:31:26,206 - INFO - Preprocessing data...
+2025-06-07 20:31:26,206 - INFO - Dropping the columns
+2025-06-07 20:31:26,206 - INFO - Encoding categorical columns
+2025-06-07 20:31:26,217 - INFO - Label encoding completed
+2025-06-07 20:31:26,217 - INFO - Mapping for type_of_meal_plan: {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-06-07 20:31:26,217 - INFO - Mapping for required_car_parking_space: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:31:26,217 - INFO - Mapping for room_type_reserved: {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-06-07 20:31:26,217 - INFO - Mapping for market_segment_type: {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-06-07 20:31:26,217 - INFO - Mapping for repeated_guest: {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-06-07 20:31:26,217 - INFO - Mapping for booking_status: {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-06-07 20:31:26,217 - INFO - Doing Skewness handling
+2025-06-07 20:31:26,217 - INFO - Applied log transformation to no_of_previous_cancellations due to high skewness
+2025-06-07 20:31:26,217 - INFO - Applied log transformation to no_of_previous_bookings_not_canceled due to high skewness
+2025-06-07 20:31:26,217 - INFO - Balancing data using SMOTE...
+2025-06-07 20:31:26,227 - INFO - Data balancing completed
+2025-06-07 20:31:26,251 - INFO - Processed data saved to artifacts/processed\test_processed.csv
+2025-06-07 20:31:26,251 - INFO - Data preprocessing pipeline completed successfully
+2025-06-07 20:31:26,251 - INFO - Data preprocessing pipeline finished
+2025-06-07 20:32:01,454 - INFO - Starting model training pipeline
+2025-06-07 20:32:01,454 - INFO - Loading data from artifacts/processed\train_processed.csv and artifacts/processed\test_processed.csv
+2025-06-07 20:32:01,470 - INFO - Data loaded from artifacts/processed\train_processed.csv successfully.
+2025-06-07 20:32:01,487 - INFO - Data loaded from artifacts/processed\test_processed.csv successfully.
+2025-06-07 20:32:01,487 - INFO - Data loaded and split successfully.
+2025-06-07 20:32:01,487 - INFO - Starting LightGBM model training.
+2025-06-07 20:32:01,487 - INFO - Starting our Hyperparameter tuning
+2025-06-07 20:32:01,487 - INFO - Starting our model training
+2025-06-07 20:32:17,869 - INFO - Model training completed successfully.
+2025-06-07 20:32:17,869 - INFO - Best parameters found: {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2025-06-07 20:32:17,871 - INFO - Evaluating model performance...
+2025-06-07 20:32:17,912 - INFO - Model evaluation completed. Accuracy: 0.8785969084423305, Precision: 0.8634703196347032, Recall: 0.8994054696789536, F1 Score: 0.8810716365754222
+2025-06-07 20:32:17,912 - INFO - Saving trained model...
+2025-06-07 20:32:17,912 - INFO - Saving model to artifacts/models/lgbm_model.pkl
+2025-06-07 20:32:17,962 - INFO - Model saved successfully at artifacts/models/lgbm_model.pkl
+2025-06-07 20:32:17,962 - INFO - Model training pipeline completed successfully.
+2025-06-07 20:32:17,962 - INFO - Model training process finished.
