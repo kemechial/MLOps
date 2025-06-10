@@ -26,7 +26,7 @@ class DataIngestion:
         Download CSV file from GCP bucket
         """
         try:
-            client = storage.Client.from_service_account_json("api-project-269968866265-c8cafdc17c42.json")
+            client = storage.Client.from_service_account_json("neat-encoder-462512-g1-17effdd33d68.json")
             bucket = client.bucket(self.bucket_name)
             blob = bucket.blob(self.file_name)
             blob.download_to_filename(os.path.join(RAW_DIR, self.file_name))

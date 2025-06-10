@@ -2,3 +2,7 @@
 *.csv
 *venv
 *.pkl
+venv/
+mlruns/
+logs/
+ML*egg-info/

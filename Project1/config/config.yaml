@@ -1,5 +1,5 @@
 data_ingestion:
-  bucket_name: "mlops_hotel_3474"
+  bucket_name: "mlops_hotel_34741"
   bucket_file_name: "Hotel_Reservations.csv"
   train_ratio: 0.8
 

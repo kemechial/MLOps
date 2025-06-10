@@ -7,6 +7,8 @@ MLOPS_Project_1.egg-info/top_level.txt
 config/__init__.py
 config/model_params.py
 config/paths_config.py
+pipeline/__init__.py
+pipeline/training_pipeline.py
 src/__init__.py
 src/custom_exception.py
 src/data_ingestion.py
