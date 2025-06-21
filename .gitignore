@@ -6,3 +6,5 @@
 mlruns/
 logs/
 ML*egg-info/
+*egg-info
+*.pyc
