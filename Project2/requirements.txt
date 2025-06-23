@@ -3,3 +3,5 @@ numpy
 setuptools
 google-cloud-storage
 pyyaml
+matplotlib
+tensorflow
