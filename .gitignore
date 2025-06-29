@@ -8,3 +8,4 @@ logs/
 ML*egg-info/
 *egg-info
 *.pyc
+*.h5
